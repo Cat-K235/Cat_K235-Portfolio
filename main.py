@@ -18,7 +18,7 @@ PROJECTS = [
         "title": "Simple Game in Pygame",
         "description": "A simple game where you run from enemies built in Pygame.",
         "image": None,  # example: "images/p1.png"
-        "link": "https://github.com/Cat_K235/Escape Enemies Game Pygame"
+        "link": "https://github.com/Cat_K235/Escape-Enemies-Game-Pygame"
     },
     {
         "id": "p2",
