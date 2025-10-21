@@ -1,0 +1,229 @@
+/* --- Modern Dark Glass Portfolio Style --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #0f0f10, #1a1a2e, #16213e);
+  --accent: #6c63ff;
+  --accent-light: #918cff;
+  --text-light: #f1f1f1;
+  --text-muted: #b0b3c7;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --transition: all 0.3s ease;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-light);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* --- Containers --- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* --- Header --- */
+.site-header {
+  background: transparent;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.site-sub {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.socials a {
+  margin-right: 1rem;
+  color: var(--accent-light);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.socials a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px var(--accent);
+}
+
+/* --- Hero Section --- */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero .name {
+  color: var(--accent);
+}
+
+.hero .bio {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.hero .btn:hover {
+  background: var(--accent-light);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
+/* --- Project Grid --- */
+.projects {
+  padding: 3rem 1rem;
+}
+
+.projects h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--accent-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(108, 99, 255, 0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.card h4 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.card-actions a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+}
+
+.card-actions a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px var(--accent);
+}
+
+/* --- Project Detail --- */
+.project-detail {
+  padding: 3rem 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.project-detail h2 {
+  font-size: 2rem;
+  color: var(--accent-light);
+  margin-bottom: 1rem;
+}
+
+.project-detail p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.project-detail img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* --- Footer --- */
+.site-footer {
+  border-top: 1px solid var(--glass-border);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.site-footer a {
+  color: var(--accent-light);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+/* --- Scrollbar styling (optional) --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-light);
+}
