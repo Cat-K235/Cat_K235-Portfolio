@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ person.name }} — Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">{{ person.name }}</h1>
+        <p class="site-sub">{{ person.title }}</p>
+        <nav class="socials">
+          {% for s in person.socials %}
+            <a href="{{ s.url }}" target="_blank">{{ s.label }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© {{ person.name }} — Built with Flask.</p>
+        <!-- EDIT THIS EMAIL -->
+        <p>Contact: <a href="mailto:mirali235689@gmail.com">mirali235689@gmail.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
