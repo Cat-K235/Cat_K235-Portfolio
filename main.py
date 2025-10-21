@@ -29,10 +29,10 @@ PROJECTS = [
     },
     {
         "id": "p3",
-        "title": "Flask AI Chatbot",
-        "description": "An AI chatbot powered by small AI model built in Flask.",
+        "title": "Flask Magic 8-Ball",
+        "description": "Magic 8-Ball made in Flask",
         "image": None,
-        "link": "https://github.com/yourusername/AI_Chatbot"
+        "link": "https://github.com/Cat-K235/8-Ball-Flask"
     },
 ]
 
