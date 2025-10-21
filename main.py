@@ -22,10 +22,10 @@ PROJECTS = [
     },
     {
         "id": "p2",
-        "title": "Flask Blog",
-        "description": "A lightweight blog app built using Flask and SQLite.",
+        "title": "Recipe Website",
+        "description": "A website where you can see the recipe for different foods made in Flask.",
         "image": None,
-        "link": "https://github.com/yourusername/flask-blog"
+        "link": "https://github.com/Cat-K235/Recipe-Website"
     },
     {
         "id": "p3",
