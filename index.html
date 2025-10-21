@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="hero">
+    <h2>Hi, I'm <span class="name">{{ person.name }}</span>.</h2>
+    <p class="bio">{{ person.bio }}</p>
+    <!-- EDIT: Add intro text or call-to-action -->
+    <!-- Example: <a class="btn" href="#projects">See my work</a> -->
+  </section>
+
+  <section id="projects" class="projects">
+    <h3>Projects</h3>
+    <div class="grid">
+      {% for p in projects %}
+      <article class="card">
+        {% if p.image %}
+          <img src="{{ url_for('static', filename=p.image) }}" alt="{{ p.title }}">
+        {% endif %}
+        <h4>{{ p.title }}</h4>
+        <p>{{ p.description }}</p>
+        <div class="card-actions">
+          <a href="{{ p.link }}" target="_blank">View</a>
+          <a href="{{ url_for('project', project_id=p.id) }}">Details</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}
